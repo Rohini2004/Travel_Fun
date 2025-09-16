@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: sans-serif; /* Replace with your desired font */
+    background-color: #d8e1e9; /* Dark background color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: linear-gradient(to right, #212c33, #00796b); /* Gradient from dark gray to teal */
+    color: #fff;
+}
+/* Logo and brand name styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a0f0f0; /* Lighter color on hover */
+}
+
+/* Search bar and buttons styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+    width: 450px;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    padding: 8px 15px;
+    font-size: 1em;
+    outline: none;
+    flex-grow: 1;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 190px;
+    color: #666;
+}
+
+.search-container button {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-btn {
+    background-color: #00796b;
+    color: #fff;
+}
+
+.clear-btn {
+    background-color: #00796b;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.search-btn:hover, .clear-btn:hover {
+    background-color: #004d40;
+}
+/* General body and background styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+}
+
+/* Background image with a two-tone gradient and image */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Combine a semi-transparent gradient with the background image */
+    background: 
+        linear-gradient(to right, rgba(0, 121, 107, 0.9) 0%, rgba(0, 121, 107, 0.9) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%),
+        url('Phra-Nang-Cave-Beach-image-02.png') no-repeat center center/cover;
+}
+
+/* The dark overlay is no longer needed with the new background gradient */
+.overlay {
+    display: none;
+}
+
+/* All other content sits on top of the background */
+.content {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main body content styling */
+.main-body-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 10%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+/* Main heading styling */
+.main-body-content h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.1;
+    width: 60%;
+}
+
+/* Paragraph styling */
+.main-body-content p {
+    font-size: 1em;
+    width: 40%;
+    line-height: 1.5;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+/* "BOOK NOW" button styling */
+.book-now-btn {
+    background-color: #00796b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 30px;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #004d40;
+}
+
+/* Social media icons styling */
+.social-icons {
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 10;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #a0f0f0;
+}
+
+/* Search validation text styling */
+.search-validation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.8em;
+    color: #fff;
+    opacity: 0.5;
+}

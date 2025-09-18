@@ -100,7 +100,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    overflow: hidden; /* Prevents scrollbars from appearing */
+     /* Prevents scrollbars from appearing */
 }
 
 /* Background image with a two-tone gradient and image */
@@ -200,7 +200,46 @@ body {
 .social-icon:hover {
     color: #a0f0f0;
 }
-
+.about-section{
+    padding: 80px 10%;
+    background-color: transparent; /* Allows the background image to show through */
+    text-align: left;
+}
+.about-section h1{
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.1;
+    width: 60%;
+    text-align: left;
+    
+}
+.about-section p{
+    font-size: 1em;
+    width: 40%;
+    line-height: 1.5;
+    margin-top: 20px;
+    opacity: 0.8;
+    text-align: left;
+    
+}
+.know-btn {
+    background-color: #00796b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 30px;
+    width: fit-content;
+    transition: background-color 0.3s;
+   
+}
+.know-btn:hover {
+    background-color: #004d40;
+}
 /* Search validation text styling */
 .search-validation {
     position: absolute;
@@ -209,4 +248,312 @@ body {
     font-size: 0.8em;
     color: #fff;
     opacity: 0.5;
+}
+
+.about-page {
+    /* Style the main content area for the about page */
+    padding: 80px 40px;
+    background-color: transparent; /* Allows the background image to show through */
+    text-align: center;
+}
+
+.team-heading {
+    /* "Meet the team" heading style */
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.team-container {
+    /* Container for all team members, using Flexbox for layout */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 20px;
+}
+
+.team-member {
+    /* Individual team member container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px; /* Adjust as needed */
+}
+
+.team-member img {
+    /* Profile photo styling */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Optional light border to match the design */
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+}
+
+.team-member .name {
+    /* Name styling */
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.team-member .title {
+    /* Title styling */
+    font-size: 1em;
+    font-weight: 400;
+    margin: 5px 0 0;
+    color: #fff;
+    opacity: 0.7;
+}
+.aboutus {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.aboutus h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.1;
+    width: 60%;
+}
+.aboutus p{
+    font-size: 1em;
+    width: 40%;
+    line-height: 1.5;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+.know-more-btn {
+    background-color: #00796b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 30px;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+.know-more-btn:hover {
+    background-color: #004d40;
+}
+/* --- Styles for the Contact Us Page --- */
+
+.contact-page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust based on your navbar height */
+    padding: 20px;
+}
+
+.contact-form-container {
+    background-color: rgba(112, 97, 97, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 50px;
+    width: 200%;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.contact-form-container h2 {
+    font-size: 3.5em;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1em;
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #00796b;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.send-message-btn {
+    background-color: #00796b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.send-message-btn:hover {
+    background-color: #036958;
+}
+/* --- Footer Styling --- */
+
+footer {
+    background: linear-gradient(to right, #212c33, #00796b);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.social-icons-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons-footer .social-icon {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons-footer .social-icon:hover {
+    color: #00796b;
+}
+
+/* You should now remove the original social icons CSS, as they are no longer in a fixed position */
+.social-icons {
+    display: none;
+}
+
+/* --- Recommendations Section Styling (Updated) --- */
+
+.recommendations-container {
+    display: grid;
+    /* This creates a responsive grid that will wrap into columns, ensuring equal spacing */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px; /* This handles the equal padding between cards */
+    justify-items: center;
+    padding-bottom: 50px;
+}
+
+.recommendation-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    /* These rules ensure all cards have a consistent height */
+    height: 400px; 
+    width: 300px;/* Set a fixed height for each card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between image and content */
+   
+}
+
+.recommendation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.recommendation-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.recommendations-section h2{
+    padding: 80px 10%;
+    background-color: transparent; /* Allows the background image to show through */
+    text-align: left;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+    /* Ensures the content section takes up the remaining space */
+    flex-grow: 1;
+    /* Hides overflow if text is too long for the fixed height */
+    overflow-y: auto;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.card-description {
+    font-size: 0.9em;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.visit-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.visit-btn:hover {
+    background-color: #004d40;
 }

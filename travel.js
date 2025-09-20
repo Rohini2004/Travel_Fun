@@ -46,20 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Main Page & About Us Button Functionality ---
+     const knowMoreBtn = document.querySelector('.know-btn');
+    if (knowMoreBtn) {
+        knowMoreBtn.addEventListener('click', () => {
+            alert("More details about us are available here!");
+        });
+    }
     // These buttons will show an alert to simulate an action.
 
     const bookNowBtn = document.querySelector('.book-now-btn');
     if (bookNowBtn) {
         bookNowBtn.addEventListener('click', () => {
             alert("Booking functionality coming soon!");
-        });
-    }
-
-    // This selects both 'know-btn' and 'know-more-btn' for flexibility.
-    const knowMoreBtn = document.querySelector('.know-btn, .know-more-btn');
-    if (knowMoreBtn) {
-        knowMoreBtn.addEventListener('click', () => {
-            alert("More details about us are available here!");
         });
     }
 
@@ -74,4 +72,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
+});
+// --- Scroll-triggered Animations for the About Page ---
+const observerOptions = {
+    root: null, // relative to the viewport
+    rootMargin: '0px',
+    threshold: 0.2 // Trigger when 20% of the item is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target); // Stop observing after animation
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.about-content-section').forEach(section => {
+    observer.observe(section);
 });

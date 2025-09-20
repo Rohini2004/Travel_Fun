@@ -223,23 +223,8 @@ body {
     text-align: left;
     
 }
-.know-btn {
-    background-color: #00796b;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 12px 30px;
-    font-weight: bold;
-    font-size: 1em;
-    cursor: pointer;
-    margin-top: 30px;
-    width: fit-content;
-    transition: background-color 0.3s;
-   
-}
-.know-btn:hover {
-    background-color: #004d40;
-}
+
+
 /* Search validation text styling */
 .search-validation {
     position: absolute;
@@ -259,7 +244,7 @@ body {
 
 .team-heading {
     /* "Meet the team" heading style */
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 300;
     margin-bottom: 100px;
     color: #fff;
@@ -323,11 +308,12 @@ body {
     padding-bottom: 100px;
 }
 .aboutus h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
     margin: 0;
     line-height: 1.1;
     width: 60%;
+    
 }
 .aboutus p{
     font-size: 1em;
@@ -335,6 +321,7 @@ body {
     line-height: 1.5;
     margin-top: 20px;
     opacity: 0.8;
+    
 }
 .know-more-btn {
     background-color: #00796b;
@@ -556,4 +543,150 @@ footer {
 
 .visit-btn:hover {
     background-color: #004d40;
+}
+
+/*about section*/
+/* --- Why Choose Us Section --- */
+.why-choose-us-section {
+    padding: 70px;
+    text-align: center;
+    background-color: transparent; /* Allows main background to show */
+    color: #fff;
+    
+}
+
+.why-choose-us-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    padding-left: 200px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 300px minimum width, up to 1fr each */
+    gap: 40px; /* Space between cards */
+    justify-content: center; /* Center the grid items if there aren't enough to fill a row */
+}
+
+.feature-card {
+    background-color: rgba(0, 121, 107, 0.7); /* Teal with transparency */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.feature-card:hover {
+    transform: translateY(-15px) scale(1.03); /* Lift and slightly enlarge on hover */
+    background-color: rgba(0, 150, 136, 0.8); /* Slightly lighter/more opaque teal */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.icon-container {
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly transparent white for icon background */
+    border-radius: 50%; /* Circular background for icon */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2); /* Inner shadow for depth */
+}
+
+.icon-container i {
+    font-size: 3em; /* Size of the Font Awesome icon */
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.feature-card h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #f0f0f0;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Optional: Add a subtle animation on load for more visual appeal */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-card {
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+    /* Delay each card slightly for a staggered effect */
+    /* You'd typically add these delays dynamically with JavaScript for better control */
+}
+
+/* Example staggered delays (can be done more efficiently with JS or preprocessors) */
+.features-grid .feature-card:nth-child(1) { animation-delay: 0.1s; }
+.features-grid .feature-card:nth-child(2) { animation-delay: 0.2s; }
+.features-grid .feature-card:nth-child(3) { animation-delay: 0.3s; }
+.features-grid .feature-card:nth-child(4) { animation-delay: 0.4s; }
+.features-grid .feature-card:nth-child(5) { animation-delay: 0.5s; }
+.features-grid .feature-card:nth-child(6) { animation-delay: 0.6s; }
+/* --- ABOUT US Page Redesign --- */
+
+/* Main container to center all content horizontally */
+.about-content-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 100px;
+    padding: 0; /* remove side padding that was restricting text */
+}
+
+.about-text-block {
+    background-color:transparent;
+    padding: 50px 0; /* remove left/right padding, keep top/bottom */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(140, 138, 138, 0.4);
+    backdrop-filter: blur(2px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    margin: 0;
+}
+.about-text-block h1{
+    font-size: 3em;
+    text-align: center;
+    padding-left: 250px;
+    
+}
+.about-text-block p {
+    font-size: 1.1em;
+    color: #f0f0f0;
+    text-align: justify;
+    margin: 0;
+    width: 100%;         /* force full width */
+    box-sizing: border-box; /* ensures padding doesn’t shrink width */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+.about-text-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(140, 138, 138, 0.6);
 }
